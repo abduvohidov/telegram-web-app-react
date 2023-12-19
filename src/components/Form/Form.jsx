@@ -19,15 +19,15 @@ const Form = () => {
   }, []);
 
   useEffect(() => {
-    tg.onEvent("mainButtonClicked", onSendData);
+    tg.onEvent('mainButtonClicked', onSendData);
     return () => {
-      tg.offEvent("mainButtonClicked", onSendData);
+      tg.offEvent('mainButtonClicked', onSendData);
     };
   }, []);
 
   useEffect(() => {
     tg.MainButton.setParams({
-      text: "Send form",
+      text: "Send data",
     });
   }, []);
 
