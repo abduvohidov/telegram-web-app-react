@@ -8,10 +8,7 @@ const ProductItem = ({ product, onAdd }) => {
   return (
     <div className="product">
       <div className="img">
-        <img
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstyleshoots.com%2Fproduct-photography-tutorial%2F2016%2F8%2F5-all-purpose-styling-tips-every-fashion-product-stylist-needs-to-know&psig=AOvVaw30QbE_VRhOc4243OKh8Bpt&ust=1703047528287000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKi53c_YmoMDFQAAAAAdAAAAABAD"
-          alt="png"
-        />
+        <img src="https://images.squarespace-cdn.com/content/v1/528f8b33e4b01f2a315145b2/1473165174041-ELTK3U8JIOQRWBV330P7/static1.squarespace-13.jpg" alt="" />
       </div>
       <div className="title">{product.title}</div>
       <div className="description">{product.description}</div>
