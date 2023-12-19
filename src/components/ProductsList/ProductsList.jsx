@@ -1,17 +1,18 @@
 import "./index.css";
-import ProductItem from "../ProductItem/ProductItem";
+
 import { useTelegram } from "../../hooks/useTelegram";
 import { useState } from "react";
-
-const products = [
-  { id: 1, title: "T-Shirt", price: "5000", description: "Color of blue" },
-  { id: 2, title: "Short", price: "200", description: "Color of black" },
-  { id: 3, title: "Umbrella", price: "400", description: "Color of red" },
-  { id: 4, title: "Case", price: "50", description: "Color of orange" },
-  { id: 5, title: "Glasses", price: "4000", description: "Color of black" },
-];
+import ProductItem from "../ProductItem/ProductItem";
 
 const ProductsList = () => {
+  const products = [
+    { id: 1, title: "T-Shirt", price: "5000", description: "Color of blue" },
+    { id: 2, title: "Short", price: "200", description: "Color of black" },
+    { id: 3, title: "Umbrella", price: "400", description: "Color of red" },
+    { id: 4, title: "Case", price: "50", description: "Color of orange" },
+    { id: 5, title: "Glasses", price: "4000", description: "Color of black" },
+  ];
+
   const [addedItems, setAddedItems] = useState([]);
 
   const { tg } = useTelegram();
@@ -46,8 +47,9 @@ const ProductsList = () => {
 
   return (
     <div className="list">
+      <h1>Products</h1>
       {products.map((item) => {
-        <ProductItem product={item} onAdd={onAdd} className={"item"} />;
+        return <ProductItem product={item} onAdd={onAdd} className='item' />;
       })}
     </div>
   );
