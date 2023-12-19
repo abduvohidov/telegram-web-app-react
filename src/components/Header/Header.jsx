@@ -7,8 +7,8 @@ const Header = () => {
 
   return (
     <div className="header">
+      <p className="username">username: {user?.username}</p>
       <Button onClick={onClose}>Close</Button>
-      <p className="username">{user?.username}</p>
     </div>
   );
 };
