@@ -11,6 +11,7 @@ const ProductsList = () => {
     { id: 3, title: "Umbrella", price: 400, description: "Color of red" },
     { id: 4, title: "Case", price: 50, description: "Color of orange" },
     { id: 5, title: "Glasses", price: 4000, description: "Color of black" },
+    { id: 6, title: "Glasses", price: 4000, description: "Color of black" },
   ];
 
   const [addedItems, setAddedItems] = useState([]);

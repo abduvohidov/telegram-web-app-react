@@ -3,9 +3,9 @@
   flex-direction: column;
   background-color: var(--tg-theme-button-color);
   box-shadow: 0 0 5px grey;
-  padding: 25px;
-  width: 150px;
-  margin: 20px;
+  padding: 20px;
+  width: 120px;
+  margin: 10px 10px;
   border-radius: 20px;
 }
 
@@ -24,7 +24,7 @@
 .add-btn {
   width: 100%;
   padding: 5px 10px;
-  margin: auto;
+  margin: 10px auto;
   color: var(--tg-theme-text-color);
   display: block;
   box-shadow: 0 0 5px white;

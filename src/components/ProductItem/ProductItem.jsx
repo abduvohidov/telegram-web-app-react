@@ -18,7 +18,7 @@ const ProductItem = ({ product, onAdd }) => {
         </span>
       </div>
       <Button className="add-btn" onClick={onAddHandler}>
-        Add in cart
+        ADD TO CART
       </Button>
     </div>
   );
