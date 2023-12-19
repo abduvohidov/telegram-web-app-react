@@ -6,6 +6,7 @@
   padding: 25px;
   width: 150px;
   margin: 20px;
+  border-radius: 20px;
 }
 
 .img img{
@@ -26,5 +27,7 @@
   margin: auto;
   color: var(--tg-theme-text-color);
   display: block;
+  box-shadow: 0 0 5px white;
+  border-radius: 20px;
   background-color: var(--tg-theme-button-color);
 }
