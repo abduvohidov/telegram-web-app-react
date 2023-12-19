@@ -40,16 +40,15 @@ const ProductsList = () => {
     } else {
       tg.MainButton.show();
       tg.MainButton.setParams({
-        text: `Buy ${'$'+ getTotalPrice(newItems)}`,
+        text: `Buy ${"$" + getTotalPrice(newItems)}`,
       });
     }
   };
 
   return (
     <div className="list">
-      <h1>Products</h1>
       {products.map((item) => {
-        return <ProductItem product={item} onAdd={onAdd} className='item' />;
+        return <ProductItem product={item} onAdd={onAdd} className="item" />;
       })}
     </div>
   );
