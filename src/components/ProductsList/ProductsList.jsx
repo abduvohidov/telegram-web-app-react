@@ -1,6 +1,7 @@
 import "./index.css";
 import ProductItem from "../ProductItem/ProductItem";
 import { useTelegram } from "../../hooks/useTelegram";
+import { useState } from "react";
 
 const products = [
   { id: 1, title: "T-Shirt", price: "5000", description: "Color of blue" },
