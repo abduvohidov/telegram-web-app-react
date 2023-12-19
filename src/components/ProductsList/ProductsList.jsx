@@ -1,7 +1,7 @@
 import "./index.css";
 
 import { useTelegram } from "../../hooks/useTelegram";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import ProductItem from "../ProductItem/ProductItem";
 
 const ProductsList = () => {
@@ -13,10 +13,26 @@ const ProductsList = () => {
     { id: 5, title: "Glasses", price: 4000, description: "Color of black" },
     { id: 6, title: "Glasses", price: 4000, description: "Color of black" },
   ];
+  
+  const { tg, queryId } = useTelegram();
+
+  const onSendData = useCallback(() => {
+    const data = {
+      products: addedItems,
+      totalPrice: getTotalPrice(addedItems),
+      queryId,
+    };
+    fetch("http://localhost:8000", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+  }, []);
 
   const [addedItems, setAddedItems] = useState([]);
 
-  const { tg } = useTelegram();
 
   const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
