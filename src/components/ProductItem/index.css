@@ -1,8 +1,9 @@
 .product {
   display: flex;
   flex-direction: column;
+  background-color: azure;
   border: 1px solid var(--tg-theme-button-color);
-  padding: 15px;
+  padding: 25px;
   width: 170px;
 }
 
@@ -20,4 +21,9 @@
 
 .add-btn {
   width: 100%;
+  padding: 5px 10px;
+  margin: auto;
+  color: var(--tg-theme-text-color);
+  display: block;
+  background-color: var(--tg-theme-button-color);
 }

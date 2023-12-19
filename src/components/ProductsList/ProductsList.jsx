@@ -6,11 +6,11 @@ import ProductItem from "../ProductItem/ProductItem";
 
 const ProductsList = () => {
   const products = [
-    { id: 1, title: "T-Shirt", price: "5000", description: "Color of blue" },
-    { id: 2, title: "Short", price: "200", description: "Color of black" },
-    { id: 3, title: "Umbrella", price: "400", description: "Color of red" },
-    { id: 4, title: "Case", price: "50", description: "Color of orange" },
-    { id: 5, title: "Glasses", price: "4000", description: "Color of black" },
+    { id: 1, title: "T-Shirt", price: 5000, description: "Color of blue" },
+    { id: 2, title: "Short", price: 200, description: "Color of black" },
+    { id: 3, title: "Umbrella", price: 400, description: "Color of red" },
+    { id: 4, title: "Case", price: 50, description: "Color of orange" },
+    { id: 5, title: "Glasses", price: 4000, description: "Color of black" },
   ];
 
   const [addedItems, setAddedItems] = useState([]);
@@ -40,7 +40,7 @@ const ProductsList = () => {
     } else {
       tg.MainButton.show();
       tg.MainButton.setParams({
-        text: `Buy ${getTotalPrice(newItems)}`,
+        text: `Buy ${'$'+ getTotalPrice(newItems)}`,
       });
     }
   };
